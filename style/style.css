@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  margin: auto;
+  max-width: 1145px;
+  width: 100%;
+  margin: auto;
+}
+
+header .logo {
+  margin-top: 50px;
+  text-align: center;
+}
+
+header .navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: #bab9b9;
+}
+
+header .navigation li {
+  font-family: Myriad Pro;
+  margin-top: 3%;
+  padding: 15px 4px;
+  font-size: 18px;
+  border-bottom: 1px solid transparent;
+}
+
+header .navigation li:hover {
+  border-bottom: 1px solid #4581b7;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+header .navigation li a:hover {
+  color: #4581b7;
+  transition: 0.5s;
+}
+
+.con-img {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 80px 0;
+}
+.con-img img{
+  max-width: 1220px;
+  width: 100%;
+  height: 550px;
+}
+
+.content {
+  margin: auto;
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content1 {
+  width: 500px;
+  margin-left: 3%;
+}
+
+.contact {
+  width: 250px;
+  margin-right: 4%;
+}
+
+.h3 {
+  color: #4581b7;
+  margin-bottom: 30px;
+}
+
+.p3 {
+  color: #808080;
+  margin-bottom: 50px;
+  font-family: Myriad Pro;
+  font-size: 16px;
+}
+
+footer {
+  margin: auto;
+  margin-top: 50px;
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.foot-logo {
+  margin-left: 4%;
+}
+
+.call-center {
+  margin-right: 50px;
+  margin-top: 25px;
+}
+
+.foot-p {
+  font-family: Myriad Pro;
+  color: #808080;
+}
+
+.foot-n {
+  font-family: Myriad Pro;
+  color: #808080;
+  font-size: 25px;
+  margin-left: 60px;
+}
+@media(max-width:1155px ){
+  .navigation{
+    flex-wrap: wrap;
+  }
+  .con-img{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+  }
+  .con-img img{
+    display: inline-block;
+    width: 90%;
+  }
+
+}
+@media(max-width:1120px){
+  .con-img{
+    margin: 30px auto 40px auto ; 
+    width: 90%;
+  }
+}
+@media(max-width:835px){
+  .content{
+    justify-content: center;
+  }
+  header .navigation li{
+    padding: 5px;
+  }
+}
+@media(max-width:582px){
+  footer{
+    justify-content: center;
+  }
+  .foot-logo{
+    margin: 0%;
+  }
+  .call-center{
+    justify-content: center;
+    margin: auto;
+  }
+  .foot-n{
+    text-align: center;
+    margin: auto;
+  }
+}
